@@ -1,0 +1,36 @@
+$detail: #8e8e8e
+    
+.post,
+.news
+    margin: 2rem 0
+    display: flex
+    align-items: center
+    gap: 1rem
+
+.keywords_wrapper
+    display: grid
+    padding: 1rem
+    position: fixed
+    top: 10%
+    left: 10%
+    width: 20%
+    color: white
+    background-color: $detail
+    grid-template-columns: 1fr 1fr
+    gap: 1rem
+    border-radius: .25rem
+
+    .keyword
+        padding: .5rem
+        position: relative
+        text-align: center
+        background-color: darken($detail, 15%)
+        cursor: pointer
+
+        &:hover
+            background-color: darken($detail, 25%)
+
+@media screen and (max-width: 56.25rem)
+    .post,
+    .news
+        flex-flow: column
